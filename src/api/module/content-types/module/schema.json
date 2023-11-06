@@ -1,11 +1,11 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "modules",
   "info": {
-    "singularName": "category",
-    "pluralName": "categories",
-    "displayName": "Category",
-    "description": "Organize your content into categories"
+    "singularName": "module",
+    "pluralName": "modules",
+    "displayName": "Modules",
+    "description": "Multiply modules"
   },
   "options": {
     "draftAndPublish": false
@@ -15,14 +15,11 @@
     "name": {
       "type": "string"
     },
-    "slug": {
-      "type": "uid"
-    },
     "articles": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::article.article",
-      "mappedBy": "category"
+      "mappedBy": "module"
     },
     "description": {
       "type": "text"

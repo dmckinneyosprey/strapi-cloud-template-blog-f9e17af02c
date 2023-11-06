@@ -247,16 +247,16 @@ async function importSeedData() {
 }
 
 module.exports = async () => {
-  const shouldImportSeedData = await isFirstRun();
+  // const shouldImportSeedData = await isFirstRun();
 
-  if (shouldImportSeedData) {
-    try {
-      console.log("Setting up the template...");
-      await importSeedData();
-      console.log("Ready to go");
-    } catch (error) {
-      console.log("Could not import seed data");
-      console.error(error);
-    }
-  }
+  // if (shouldImportSeedData) {
+  //   try {
+  //     console.log("Setting up the template...");
+  //     await importSeedData();
+  //     console.log("Ready to go");
+  //   } catch (error) {
+  //     console.log("Could not import seed data");
+  //     console.error(error);
+  //   }
+  // }
 };
