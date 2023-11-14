@@ -15,6 +15,9 @@
     "name": {
       "type": "string"
     },
+    "icon": {
+      "type": "string"
+    },
     "articles": {
       "type": "relation",
       "relation": "oneToMany",
